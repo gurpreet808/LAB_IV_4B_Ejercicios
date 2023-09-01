@@ -6,7 +6,9 @@ div#main_container {
 
     border: 1px solid black;
     padding: 1rem;
-    border-radius: 0.5rem;
+    background-color: #fffed8;
+
+    font-family: system-ui;
 }
 
 div#edadForm {
@@ -42,4 +44,21 @@ div[name="rdo_container"] {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+div#button_container>button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button#btn_calcular {
+    background-color: #aaffaa;
+}
+
+button#btn_limpiar {
+    background-color: #ffaaaa;
 }
