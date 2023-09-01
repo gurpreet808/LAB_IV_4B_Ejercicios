@@ -20,12 +20,12 @@
   <div id="rdos_container">
     <div id="suma_container" name="rdo_container">
       <label for="sumaEdades">Suma de las edades</label>
-      <input type="number" name="resultados" id="sumaEdades" [(ngModel)]="suma" readonly>
+      <input type="number" name="resultados" id="sumaEdades" [value]="suma ?? null" readonly>
     </div>
 
     <div id="promedio_container" name="rdo_container">
       <label for="promEdades">Promedio de las edades</label>
-      <input type="number" name="resultados" id="promEdades" [(ngModel)]="promedio" readonly>
+      <input type="number" name="resultados" id="promEdades" [value]="promedio ?? null" readonly>
     </div>
   </div>
 
