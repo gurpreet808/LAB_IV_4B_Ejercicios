@@ -1,28 +1,32 @@
-<div>
-  <div>
-    <label for="edadUno">Edad 1</label>
-    <input type="number" name="edades" id="edadUno" [(ngModel)]="edadUno" placeholder="Ingrese una edad">
+<div id="main_container">
+
+  <div id="edadForm">
+    <div id="edadUno_container" name="edades_container">
+      <label for="edadUno">Edad 1</label>
+      <input type="number" name="edades" id="edadUno" [(ngModel)]="edadUno" placeholder="Ingrese una edad">
+    </div>
+
+    <div id="edadDos_container" name="edades_container">
+      <label for="edadDos">Edad 2</label>
+      <input type="number" name="edades" id="edadDos" [(ngModel)]="edadDos" placeholder="Ingrese otra edad">
+    </div>
   </div>
 
-  <div>
-    <label for="edadDos">Edad 2</label>
-    <input type="number" name="edades" id="edadDos" [(ngModel)]="edadDos" placeholder="Ingrese otra edad">
-  </div>
-</div>
-
-<div>
-  <button (click)="calcular()">Calcular</button>
-  <button (click)="limpiar()">Limpiar cuadros de textos</button>
-</div>
-
-<div>
-  <div>
-    <label for="sumaEdades">Suma de las edades</label>
-    <input type="number" name="resultados" id="sumaEdades" [value]="suma">
+  <div id="button_container">
+    <button (click)="calcular()">Calcular</button>
+    <button (click)="limpiar()">Limpiar cuadros de textos</button>
   </div>
 
-  <div>
-    <label for="promEdades">Promedio de las edades</label>
-    <input type="number" name="resultados" id="promEdades" [value]="promedio">
+  <div id="rdos_container">
+    <div id="suma_container" name="rdo_container">
+      <label for="sumaEdades">Suma de las edades</label>
+      <input type="number" name="resultados" id="sumaEdades" [value]="suma">
+    </div>
+
+    <div id="promedio_container" name="rdo_container">
+      <label for="promEdades">Promedio de las edades</label>
+      <input type="number" name="resultados" id="promEdades" [value]="promedio">
+    </div>
   </div>
+
 </div>
