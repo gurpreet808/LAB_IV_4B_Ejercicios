@@ -1,1 +1,30 @@
-<p>registrar-usuario works!</p>
+<div id="registrar_container">
+    <div id="registrar_title">
+        Registrar usuario
+    </div>
+    <div id="registrar_form">
+        <div name="registrar_form_input" id="nombre_container">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" [(ngModel)]="usuario.nombre" [disabled]="block_ui">
+        </div>
+
+        <div name="registrar_form_input" id="clave_container">
+            <label for="clave">Clave</label>
+            <input type="password" id="clave" name="clave" placeholder="Ingrese su Clave" [(ngModel)]="usuario.clave" [disabled]="block_ui">
+        </div>
+
+        <div name="registrar_form_input" id="clave2_container">
+            <label for="clave2">Repita su clave</label>
+            <input type="password" id="clave2" name="clave2" placeholder="Vuelva a escribir su clave" [(ngModel)]="clave2" [disabled]="block_ui">
+        </div>
+
+        <div id="error_container">
+            {{error}}
+        </div>
+
+        <div id="registrar_btn_container">
+            <button name="registrar_btns" id="registrar_btn" (click)="registrar()" [disabled]="block_ui">Registrarme</button>
+            <button name="registrar_btns" id="btn_login" routerLink="/login">Ya tengo una cuenta</button>
+        </div>
+    </div>
+</div>
