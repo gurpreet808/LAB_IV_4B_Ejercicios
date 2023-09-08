@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bienvenido.component.scss']
 })
 export class BienvenidoComponent {
-
+  nom_usuario: string = '';
 }
