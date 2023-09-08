@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { BienvenidoComponent } from './componentes/bienvenido/bienvenido.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ErrorComponent } from './componentes/error/error.component';
+import { EjerciciosClase01Component } from './componentes/ejercicios-clase01/ejercicios-clase01.component';
+import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
+import { RegistrarUsuarioComponent } from './componentes/registrar-usuario/registrar-usuario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    EjerciciosClase01Component,
+    NavBarComponent,
+    RegistrarUsuarioComponent
   ],
   imports: [
     BrowserModule,
